@@ -3,6 +3,7 @@
   "description": "Generate an ISC license.",
   "version": "1.0.0",
   "author": "Nate Goldman <ungoldman@gmail.com>",
+  "bin": "./index.js",
   "bugs": {
     "url": "https://github.com/ungoldman/isc-license/issues"
   },
