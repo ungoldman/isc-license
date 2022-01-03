@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 
-var pkg = require('./package.json')
-var dedent = require('dedent')
-var path = require('path')
-var arg = process.argv[2]
+const pkg = require('./package.json')
+const dedent = require('dedent')
+const path = require('path')
+const arg = process.argv[2]
 
 function license () {
-  var author = getAuthor()
+  const author = getAuthor()
 
   console.log(dedent`
     # [ISC License](https://spdx.org/licenses/ISC)
@@ -20,7 +20,7 @@ function license () {
 }
 
 function getAuthor (userPkg) {
-  var { author } = require(path.join(process.cwd(), 'package.json'))
+  const { author } = require(path.join(process.cwd(), 'package.json'))
 
   if (!author) {
     console.error('author missing in package.json')
